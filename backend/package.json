@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Fronrend Lab",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon",
+    "db:push": "drizzle-kit push",
+    "db:seed":"node ./scripts/seed.recipe.js"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.1.0",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.1",
+    "drizzle-orm": "^0.45.2",
+    "express": "^5.2.1",
+    "nodemon": "^3.1.14"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "drizzle-kit": "^0.31.10",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
